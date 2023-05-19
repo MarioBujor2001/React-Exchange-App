@@ -23,3 +23,10 @@
 .right {
     color: blue;
 }
+
+input {
+    background-color: rgba(147, 147, 147, 0);
+    border: none;
+    width: 50px;
+    font-weight: bold;
+}
