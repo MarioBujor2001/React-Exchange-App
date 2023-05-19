@@ -1,23 +1,16 @@
-import logo from './logo.svg';
+import { Button } from 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
-
+import CurrencySelector from './components/CurrencySelector';
+import ExchangeHistory from './components/EchangeHistory';
+import ExchangeView from './components/ExchangeView';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App container">
+      <CurrencySelector />
+      <ExchangeView />
+      <ExchangeHistory />
+      <button class='btn btn-danger rounded-pill mt-4'>BUY</button>
     </div>
   );
 }

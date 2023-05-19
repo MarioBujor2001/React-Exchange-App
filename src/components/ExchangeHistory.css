@@ -1,0 +1,25 @@
+.history-item-left {
+    text-align: left;
+}
+
+.history-item-left p {
+    color: rgb(147, 147, 147);
+}
+
+.history-item-right {
+    text-align: right;
+    font-weight: bold;
+}
+
+.history-item-right p {
+    color: rgb(255, 0, 0);
+}
+
+.history-item-right h3 {
+    color: rgb(57, 57, 245);
+}
+
+.scrollable {
+    max-height: 300px;
+    overflow-y: scroll;
+}

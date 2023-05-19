@@ -1,0 +1,25 @@
+.exchange-currency {
+    background-color: rgb(220, 220, 220);
+    border-radius: 10px;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.sign {
+    font-size: x-large;
+}
+
+.exchange-rate {
+    text-align: left;
+    color: rgb(147, 147, 147);
+    font-weight: bold;
+}
+
+
+.left {
+    color: red;
+}
+
+.right {
+    color: blue;
+}
