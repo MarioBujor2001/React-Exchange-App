@@ -20,7 +20,7 @@ export default function ExchangeView(props) {
         {/* conversion rate 1 */}
         <div class='row mx-3 pb-2'>
             <div class='container exchange-rate'>
-                - 1 <span>{props.utils.startCurrency}</span> = <span>{props.utils.rateStart}</span><span>{props.utils.resCurrency}</span>
+                1 <span>{props.utils.startCurrency}</span> = <span>{props.utils.rateStart}</span><span>{props.utils.resCurrency}</span>
             </div>
         </div>
         {/* //curency end */}
@@ -34,9 +34,9 @@ export default function ExchangeView(props) {
             </div>
         </div>
         {/* conversion rate 2 */}
-        <div class='row mx-2'>
+        <div class='row mx-3'>
             <div class='container exchange-rate'>
-                - 1 <span>{props.utils.resCurrency}</span> = <span>{props.utils.rateRes}</span><span>{props.utils.startCurrency}</span>
+                1 <span>{props.utils.resCurrency}</span> = <span>{props.utils.rateRes}</span><span>{props.utils.startCurrency}</span>
             </div>
         </div>
     </div>);
