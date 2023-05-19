@@ -1,5 +1,6 @@
 import './ExchangeView.css';
-import { useEffect, useState } from 'react';
+import { Modal, Button } from 'bootstrap';
+import React from 'react';
 export default function ExchangeView(props) {
 
     return (<div class="container exchange-view pb-3">

@@ -5,7 +5,7 @@ import CurrencySelector from './components/CurrencySelector';
 import ExchangeHistory from './components/ExchangeHistory';
 import ExchangeView from './components/ExchangeView';
 
-const APPID = '45c6594d892c417ea99b1d04d15c149d';
+const APPID = '--';
 
 function App() {
 
@@ -64,6 +64,22 @@ function App() {
     setHistory([...history, item])
   }
 
+  const postMessage = (message) => {
+    console.log(message);
+    fetch('https://jsonplaceholder.typicode.com/comments', {
+      method: 'POST',
+      body: JSON.stringify({
+        "name": "USER",
+        "email": "user@gmail.com",
+        "body": message
+      }),
+      headers: {
+        'Content-type': 'application/json; charset=UTF-8',
+      }
+    }).then((body) => body.json())
+      .then((json) => console.log(json))
+  }
+
   useEffect(() => {
     updateRates();
   }, []);
@@ -91,7 +107,8 @@ function App() {
       } />
       <ExchangeHistory utils={{ history }} />
       <button class='btn btn-danger rounded-pill mt-4' onClick={() => {
-        addHistoryItem({ startCurrency, resCurrency, startAmount, resAmount })
+        addHistoryItem({ startCurrency, resCurrency, startAmount, resAmount });
+        postMessage(`User just bought ${resAmount}${resCurrency} with ${startAmount}${startCurrency}`);
       }}>BUY</button>
     </div>
   );
